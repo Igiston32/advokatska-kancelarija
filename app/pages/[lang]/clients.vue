@@ -1,4 +1,15 @@
 <script setup lang="ts">
+import { computed } from 'vue'
+import { getLocaleFromParam, localizedText } from '~/composables/useSiteLocale'
+
+const route = useRoute()
+
+const locale = computed(() =>
+  getLocaleFromParam(route.params.lang as string | string[] | undefined)
+)
+
+const copy = computed(() => localizedText[locale.value])
+
 const sectors = [
   'Food and Beverage',
   'Retail and Distribution',
@@ -13,8 +24,8 @@ const sectors = [
 
 <template>
   <section class="section">
-    <p class="eyebrow">Clients</p>
-    <h1>Trusted by domestic and international organizations</h1>
+    <p class="eyebrow">{{ copy.pages.clientsEyebrow }}</p>
+    <h1>{{ copy.pages.clientsTitle }}</h1>
     <p class="lead">
       We represent multinational companies, local enterprises and institutions across a
       wide range of sectors.

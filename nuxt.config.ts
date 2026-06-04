@@ -4,7 +4,23 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
   app: {
-    baseURL: process.env.NUXT_APP_BASE_URL || '/'
+    baseURL: import.meta.env.NUXT_APP_BASE_URL || '/'
+  },
+  nitro: {
+    prerender: {
+      routes: [
+        '/sr',
+        '/sr/team',
+        '/sr/practice-areas',
+        '/sr/clients',
+        '/sr/contact',
+        '/en',
+        '/en/team',
+        '/en/practice-areas',
+        '/en/clients',
+        '/en/contact'
+      ]
+    }
   }
 })
   

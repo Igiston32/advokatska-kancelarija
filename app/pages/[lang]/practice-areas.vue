@@ -1,4 +1,15 @@
 <script setup lang="ts">
+import { computed } from 'vue'
+import { getLocaleFromParam, localizedText } from '~/composables/useSiteLocale'
+
+const route = useRoute()
+
+const locale = computed(() =>
+  getLocaleFromParam(route.params.lang as string | string[] | undefined)
+)
+
+const copy = computed(() => localizedText[locale.value])
+
 const practices = [
   'Banking and Finance',
   'Corporate and Commercial',
@@ -13,8 +24,8 @@ const practices = [
 
 <template>
   <section class="section">
-    <p class="eyebrow">Practice Areas</p>
-    <h1>Focused expertise across key industries</h1>
+    <p class="eyebrow">{{ copy.pages.practiceEyebrow }}</p>
+    <h1>{{ copy.pages.practiceTitle }}</h1>
     <p class="lead">
       We advise clients in transactions, regulatory matters and strategic disputes with a
       practical approach tailored to each business context.

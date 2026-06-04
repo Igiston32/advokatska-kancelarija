@@ -1,4 +1,15 @@
 <script setup lang="ts">
+import { computed } from 'vue'
+import { getLocaleFromParam, localizedText } from '~/composables/useSiteLocale'
+
+const route = useRoute()
+
+const locale = computed(() =>
+  getLocaleFromParam(route.params.lang as string | string[] | undefined)
+)
+
+const copy = computed(() => localizedText[locale.value])
+
 const teamMembers = [
   { name: 'Ime Prezime', role: 'Partner' },
   { name: 'Ime Prezime', role: 'Senior Associate' },
@@ -11,8 +22,8 @@ const teamMembers = [
 
 <template>
   <section class="section">
-    <p class="eyebrow">Team</p>
-    <h1>Dedicated legal professionals</h1>
+    <p class="eyebrow">{{ copy.pages.teamEyebrow }}</p>
+    <h1>{{ copy.pages.teamTitle }}</h1>
     <p class="lead">
       Our lawyers are recognized for reliability, detail-oriented execution and practical
       advice aligned with client goals.
