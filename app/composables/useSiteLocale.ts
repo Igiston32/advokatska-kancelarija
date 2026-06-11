@@ -34,7 +34,6 @@ export const localizedText = {
       firm: 'Kancelarija',
       team: 'Tim',
       practiceAreas: 'Oblasti rada',
-      clients: 'Klijenti',
       contact: 'Kontakt'
     },
     pages: {
@@ -48,9 +47,7 @@ export const localizedText = {
       teamEyebrow: 'Tim',
       teamTitle: 'Posveceni pravni profesionalci',
       practiceEyebrow: 'Oblasti rada',
-      practiceTitle: 'Fokusirana ekspertiza kroz kljucne industrije',
-      clientsEyebrow: 'Klijenti',
-      clientsTitle: 'Poverenje domacih i medjunarodnih organizacija',
+      practiceTitle: 'Oblasti pravne podrske',
       contactEyebrow: 'Kontakt',
       contactTitle: 'Hajde da razgovaramo o vasim pravnim potrebama',
       requestConsultation: 'Kontakt',
@@ -62,7 +59,6 @@ export const localizedText = {
       firm: 'The Firm',
       team: 'Team',
       practiceAreas: 'Practice Areas',
-      clients: 'Clients',
       contact: 'Contact'
     },
     pages: {
@@ -76,9 +72,7 @@ export const localizedText = {
       teamEyebrow: 'Team',
       teamTitle: 'Dedicated legal professionals',
       practiceEyebrow: 'Practice Areas',
-      practiceTitle: 'Focused expertise across key industries',
-      clientsEyebrow: 'Clients',
-      clientsTitle: 'Trusted by domestic and international organizations',
+      practiceTitle: 'Legal Practice Areas',
       contactEyebrow: 'Contact',
       contactTitle: 'Let us discuss your legal needs',
       requestConsultation: 'Contact',

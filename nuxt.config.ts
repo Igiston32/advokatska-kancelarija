@@ -12,12 +12,10 @@ export default defineNuxtConfig({
         '/sr',
         '/sr/team',
         '/sr/practice-areas',
-        '/sr/clients',
         '/sr/contact',
         '/en',
         '/en/team',
         '/en/practice-areas',
-        '/en/clients',
         '/en/contact'
       ]
     }

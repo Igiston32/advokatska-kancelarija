@@ -21,7 +21,6 @@ const navLinks = computed(() => [
   { to: withLocale('/', locale.value), label: copy.value.nav.firm },
   { to: withLocale('/team', locale.value), label: copy.value.nav.team },
   { to: withLocale('/practice-areas', locale.value), label: copy.value.nav.practiceAreas },
-  { to: withLocale('/clients', locale.value), label: copy.value.nav.clients },
   { to: withLocale('/contact', locale.value), label: copy.value.nav.contact }
 ])
 

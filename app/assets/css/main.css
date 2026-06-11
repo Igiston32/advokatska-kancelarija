@@ -230,6 +230,10 @@ a {
   color: rgba(246, 242, 234, 0.9);
 }
 
+.practice-intro {
+  max-width: none;
+}
+
 .cta-link {
   display: inline-block;
   margin-top: 1.1rem;
@@ -295,6 +299,53 @@ a {
   border-left: 3px solid var(--accent);
   background: var(--surface);
   padding: 0.62rem 0.75rem;
+}
+
+.practice-accordion {
+  margin-top: 1.6rem;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.practice-item {
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.practice-trigger {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  color: var(--text);
+  padding: 0.9rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  text-align: left;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.practice-icon {
+  font-size: 1.15rem;
+  line-height: 1;
+  color: var(--accent-dark);
+}
+
+.practice-panel {
+  border-top: 1px solid var(--line);
+  padding: 0.9rem 1rem 1rem;
+}
+
+.practice-panel p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.practice-panel p + p {
+  margin-top: 0.8rem;
 }
 
 .chips {
