@@ -49,7 +49,14 @@ export const localizedText = {
       practiceEyebrow: 'Oblasti rada',
       practiceTitle: 'Oblasti pravne podrske',
       contactEyebrow: 'Kontakt',
-      contactTitle: 'Hajde da razgovaramo o vasim pravnim potrebama',
+      contactTitle: 'Kontaktirajte nas',
+      contactLead: 'Javite nam se za pravne konsultacije, podrsku u projektima ili zastupanje.',
+      contactAddressLabel: 'Adresa',
+      contactPhoneLabel: 'Telefon',
+      contactEmailLabel: 'Email',
+      contactAddress: 'Vojvoda Savatija 28, Beograd',
+      contactPhone: '+381 (0)11 241-4152',
+      contactEmail: 'lawofficedelicmilosevic@gmail.com',
       requestConsultation: 'Kontakt',
       sendEmail: 'Posalji email'
     }
@@ -74,7 +81,14 @@ export const localizedText = {
       practiceEyebrow: 'Practice Areas',
       practiceTitle: 'Legal Practice Areas',
       contactEyebrow: 'Contact',
-      contactTitle: 'Let us discuss your legal needs',
+      contactTitle: 'Contact Us',
+      contactLead: 'Reach out for legal consultation, project support, or representation.',
+      contactAddressLabel: 'Address',
+      contactPhoneLabel: 'Phone',
+      contactEmailLabel: 'Email',
+      contactAddress: 'Vojvoda Savatija 28, Belgrade',
+      contactPhone: '+381 (0)11 241-4152',
+      contactEmail: 'lawofficedelicmilosevic@gmail.com',
       requestConsultation: 'Contact',
       sendEmail: 'Send Email'
     }

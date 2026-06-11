@@ -16,11 +16,12 @@ const locale = computed(() =>
 )
 
 const copy = computed(() => localizedText[locale.value])
+const brandName = 'MILOŠEVIĆ & DELIĆ'
 
 const navLinks = computed(() => [
   { to: withLocale('/', locale.value), label: copy.value.nav.firm },
-  { to: withLocale('/team', locale.value), label: copy.value.nav.team },
   { to: withLocale('/practice-areas', locale.value), label: copy.value.nav.practiceAreas },
+  { to: withLocale('/team', locale.value), label: copy.value.nav.team },
   { to: withLocale('/contact', locale.value), label: copy.value.nav.contact }
 ])
 
@@ -53,14 +54,14 @@ useHead(() => ({
   <div class="site-shell">
     <header class="topbar">
       <NuxtLink :to="withLocale('/', locale)" class="brand" @click="closeMenu">
-        <span class="brand-mark">AK</span>
-        <span class="brand-text">Advokatska kancelarija</span>
+        <img class="brand-logo" src="/justice-logo.png" alt="Logo" />
+        <span class="brand-text">{{ brandName }}</span>
       </NuxtLink>
 
       <button
         class="menu-toggle"
         type="button"
-        :aria-expanded="String(isMenuOpen)"
+        :aria-expanded="isMenuOpen"
         aria-controls="main-navigation"
         @click="isMenuOpen = !isMenuOpen"
       >
